@@ -5,8 +5,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f; // Set player's movement speed.
     public float rotationSpeed = 120.0f; // Set player's rotation speed.
-
     private Rigidbody rb; // Reference to player's Rigidbody.
+    public float jumpforce = 5.0f;
 
     // Start is called before the first frame update
     private void Start()
@@ -17,7 +17,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.AddForce(Vector3.up * jumpforce, ForceMode.VelocityChange);
+        }
     }
 
 
