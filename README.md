@@ -7,3 +7,5 @@ Unity Learn での学習を目的としたリポジトリ
 ## Unity バージョン
 
 [6000.0.16f1](https://unity.com/ja/releases/editor/whats-new/6000.0.16)
+
+2025/3/13 Unity Essentials完了
